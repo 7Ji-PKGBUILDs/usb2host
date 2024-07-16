@@ -2,14 +2,14 @@
 
 pkgname='usb2host'
 pkgver='1.0'
-pkgrel='1'
+pkgrel='2'
 pkgdesc='A tiny program to put dual-role USB port to host mode'
 url='https://github.com/7Ji/usb2host'
 license=('GPL3')
 install="${pkgname}".install
 source=("${url}"/archive/refs/tags/v"${pkgver}".tar.gz)
 sha256sums=('0a00ab9b3db484be2c90b0cb6a7c99d9a88f22b5768eed90605c3c631b048a23')
-arch=('any')
+arch=('x86_64' 'aarch64')
 
 _srcname="${pkgname}-${pkgver}"
 build() {
